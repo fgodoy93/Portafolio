@@ -3,7 +3,8 @@ body{
 }
 
 .hero-bg {
-    background-image: url("../assets/img/banner.webp");
+    height: 600px;
+    background-image: url("../img/banner2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
