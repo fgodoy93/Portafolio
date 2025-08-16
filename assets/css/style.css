@@ -35,17 +35,36 @@ body{
     background-color: #0A192F;
 }
 
+.hero-bg .btn-primary {
+    margin-top: 15px;
+}
+
+.sobre-mi-text {
+    text-align: justify;       /* justifica el texto */
+    text-justify: inter-word;  /* mejora la justificación en navegadores */
+    max-width: 1000px;          /* limita ancho para lectura más cómoda */
+    margin: 0 auto 1.5rem auto; /* centra el párrafo y añade espacio inferior */
+    line-height: 1.7;          /* mejora la legibilidad */
+    font-size: 1.05rem;        /* tamaño de fuente cómodo */
+    color: #fff;               /* color de texto elegante */
+}
+
+.sobre-mi h1 {
+    font-weight: 700;
+    color: #fff;
+}
+
 .tech-icon img {
     width: 200px;
     height: 200px;
-    filter: brightness(0) invert(1); /* Blanco sobre fondo oscuro */
-    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0) invert(1); /* se deja la imagen en blanco/gris */
+    transition: transform 0.3s ease, filter 0.3s ease;  /* genera la transición */
     opacity: 0.85;
 }
 
 .tech-icon img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2) invert(0) drop-shadow(0 0 8px #64FFDA);
+    transform: scale(1.1); /* vuelve al color original y se aplica un pequeño zoom */
+    filter: brightness(1.2) invert(0) drop-shadow(0 0 8px #a8aaae);
     opacity: 1;
 }
 
@@ -93,9 +112,43 @@ body{
     cursor: pointer;
 }
 
-.card img{
+/* Card general */
+.card {
+    width: 100%;      /* importante para ocupar la columna completa */
+    height: 100%;     /* ocupar toda la altura disponible */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #112240;
+    color: #E6F1FF;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card-img-top {
     width: 100%;
-    height: auto;
+    /* height: 200px; */
+    object-fit: cover;
+}
+
+/* Card body */
+.card-body h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Botón */
+.card-body .btn-primary {
+    width: 100%;
+    margin-top: 10px;
 }
 
 .btn-primary {
@@ -111,4 +164,80 @@ body{
 
 .lead {
     color: #8892B0;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles móvil */
+@media (max-width: 768px) {
+    .hero-bg {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-bg h1 {
+        font-size: 2rem;
+    }
+
+    .hero-bg p.lead {
+        font-size: 1rem;
+    }
+
+    .foto-wrapper{
+        width: 150px;
+        height: 150px;
+    }
+
+    .tech-icon img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sobre-mi {
+    padding: 50px 20px;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    .card-img-top {
+        height: 200px; /* imagen más pequeña en móviles */
+    }
+
+    .card-body h5 {
+        font-size: 1.1rem;
+    }
+
+    .card-body p {
+        font-size: 0.95rem;
+    }
+
+    .card-body .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 120px;
+    }
+
+    .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    section{
+        padding: 0 20px; /* Añadir un poco de padding para móviles */
+    }
 }
