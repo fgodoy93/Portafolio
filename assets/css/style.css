@@ -2,7 +2,7 @@ body{
     background-color: #0A192F;
     color: #E6F1FF;
     font-family: 'Inter', sans-serif;
-    margin-bottom: 0;
+    margin-bottom: 0; /* Elimina el margen inferior despues del footer */
 }
 
 .foto-wrapper {
@@ -33,20 +33,24 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-color: #0A192F;
+    margin-top: 15px;
+    padding-top: 50px;
+    align-items: center;
+    vertical-align: middle;
 }
 
-.hero-bg .btn-primary {
+.btn-primary {
     margin-top: 15px;
 }
 
 .sobre-mi-text {
     text-align: justify;       /* justifica el texto */
     text-justify: inter-word;  /* mejora la justificación en navegadores */
-    max-width: 1000px;          /* limita ancho para lectura más cómoda */
-    margin: 0 auto 1.5rem auto; /* centra el párrafo y añade espacio inferior */
-    line-height: 1.7;          /* mejora la legibilidad */
-    font-size: 1.05rem;        /* tamaño de fuente cómodo */
-    color: #fff;               /* color de texto elegante */
+    max-width: 1000px;          /* limita ancho del parrafo */
+    margin: 0 auto 1.5rem auto; 
+    line-height: 1.7;          
+    font-size: 1.05rem;        
+    color: #fff;            
 }
 
 .sobre-mi h1 {
@@ -77,8 +81,9 @@ body{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
 }
+
 
 .modal-content {
     margin: 15% auto;
@@ -114,17 +119,18 @@ body{
 
 /* Card general */
 .card {
-    width: 100%;      /* importante para ocupar la columna completa */
+    width: 100%;      /* para ocupar la columna completa */
     height: 100%;     /* ocupar toda la altura disponible */
     border-radius: 10px;
     overflow: hidden;
     background-color: #112240;
     color: #E6F1FF;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, 
+    box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* sube la card al poner el cursor encima */
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
