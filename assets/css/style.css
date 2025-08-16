@@ -178,11 +178,13 @@ footer a {
     font-size: 1.2rem;
 }
 
-/* Responsive styles móvil */
-@media (max-width: 768px) {
+/* Responsive Tablet */
+@media (max-width: 1024px) {
     .hero-bg {
-        height: auto;
-        padding: 60px 20px;
+        height: auto; /* deja que el contenido determine la altura */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0; /* eliminar margen extra debajo */
     }
 
     .hero-bg h1 {
@@ -204,9 +206,9 @@ footer a {
     }
 
     .sobre-mi {
-    padding: 50px 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
-
     footer a {
         font-size: 1rem;
     }
@@ -244,6 +246,19 @@ footer a {
     }
 
     section{
-        padding: 0 20px; /* Añadir un poco de padding para móviles */
+        padding: 0 25px; /* Añadir un poco de padding para móviles */
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .hero-bg {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    .sobre-mi {
+        padding-top: 40px !important;
     }
 }
