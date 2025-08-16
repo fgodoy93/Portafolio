@@ -1,0 +1,22 @@
+{
+    "proyectos": [
+        {
+            "nombre": "Buscador de Libros",
+            "descripcion": "Aplicación para buscar libros por nombre de autor/a utilizando la API de Open Library.",
+            "imagen": "assets/img/libros.png",
+            "url": "https://fgodoy93.github.io/BuscadorDeLibros/"
+        },
+        {
+            "nombre": "To Do List",
+            "descripcion": "Aplicación donde puedes ver, agregar, editar y eliminar tus tareas pendientes",
+            "imagen": "assets/img/todo.png",
+            "url": "https://fgodoy93.github.io/M3_EvaluacionPortafolio/"
+        },
+        {
+            "nombre": "Supermercado",
+            "descripcion": "Aplicación que simula una plataforma de supermercado.",
+            "imagen": "assets/img/super.png",
+            "url": "https://fgodoy93.github.io/Supermercado/"
+        }
+    ]
+}
